@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Reservation | DreamsFood - Restaurant, Pizza & Bar </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="DreamsFood is a modern Bootstrap 5 HTML template for restaurants, pizza shops, bars, and food delivery businesses. Build fast, responsive, and visually appealing food websites with ease.">
+	<meta name="keywords" content="restaurant template, pizza shop, bar pub, food delivery, bootstrap 5, html template, responsive design, online ordering, cafe website, fast food, booking system, modern ui, seo optimized">
+	<meta name="author" content="Dreams Technologies">
+	
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+   	<!-- Apple Icon -->
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Lucide CSS -->
+    <link rel="stylesheet" href="assets/plugins/lucide/lucide.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <!-- WOW CSS -->
+	<link rel="stylesheet" href="assets/plugins/wow/css/animate.css" >
+
+    <!-- choices CSS -->        
+    <link rel="stylesheet" href="assets/plugins/choices/choices.min.css">
+
+    <!-- flatpickr CSS -->  
+    <link rel="stylesheet" href="assets/plugins/flatpickr/flatpickr.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+
+</head>
+
+<body>
+
+	<!-- Begin Wrapper -->
+	<div class="main-wrapper" role="main">
+
+      	<!-- Header Start -->
+        <header class="header">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg header-nav" aria-label="Main navigation">
+					<div class="navbar-header">
+						<a href="index.html" class="navbar-brand logo">
+							<img src="assets/img/logo.svg" class="img-fluid" alt="Logo">
+						</a>
+						<a href="index.html" class="navbar-brand logo-white">
+							<img src="assets/img/logo-white.svg" class="img-fluid" alt="Logo-white">
+						</a>
+						<div id="mobile_btn">
+							<i class="icon-menu"></i>
+						</div>
+					</div>
+					<div class="menu-wrapper">
+						<div class="menu-overlay"></div>
+						<div class="main-menu-wrapper">
+							<div>
+								<div class="menu-header">
+									<a href="index.html" class="menu-logo">
+										<img src="assets/img/logo-white.svg" class="img-fluid logo" alt="Logo-white">
+									</a>	
+									<div class="d-inline-flex align-items-center gap-2"> 
+										<a href="#" class="topbar-link topbar-cart d-lg-flex" data-bs-toggle="offcanvas" data-bs-target="#add_cart" aria-label="View cart">
+                                            <i class="icon-shopping-bag"></i>
+                                            <span class="badge-icon bg-primary">2</span>
+                                        </a>
+                                        <a href="user-wishlist.html" class="btn topbar-link" aria-label="wishlist"><i class="icon-heart"></i></a>
+										<button type="button" id="menu_close" class="menu-close topbar-link" aria-label="close">
+											<i class="icon-x"></i>
+										</button>
+									</div>	
+								</div>
+								<ul class="main-nav">
+                                    
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="menu-list.html">Menus</a></li>
+                                        <li><a href="product.html">Product</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="reservation.html">Reservation</a></li>
+                                        <li><a href="contact-us.html">Contact</a></li>
+                                                                              
+                                </ul>   
+							</div>
+						</div>
+					</div>
+					<div class="nav header-items">		
+						<a href="user-wishlist.html" class="topbar-link topbar-cart">
+							<i class="icon-heart"></i>
+							<span class="badge-icon bg-secondary">4</span>
+						</a>
+												<a href="cart.html" class="topbar-link topbar-cart">
+							<i class="icon-shopping-bag"></i>
+							<span class="badge-icon bg-primary">2</span>
+						</a>
+						<a href="reservation.html" class="btn btn-primary reserve-btn"><i class="icon-calendar-fold me-2"></i><span>Reservation</span></a>
+					</div>
+				</nav>
+			</div>
+		</header>
+        <!-- End Header -->
+
+        <!-- ========================
+			Start Page Content
+		========================= -->
+        <div class="page-wrapper">
+
+            <!-- Start Breadscrumb -->
+            <div class="breadcrumb-bar">
+                <div class="container">
+                    <div class="breadcrumb-item">
+                        <h1 class="breadcrumb-title">Book a Table</h1>
+                        <nav aria-label="breadcrumb" class="page-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-items"><a href="index.html"><i class="icon-house me-2"></i>Home</a></li>
+                                <li class="breadcrumb-items"><span><i class="icon-chevron-right"></i></span></li>
+                                <li class="breadcrumb-items active" aria-current="page">Book a Table</li>
+                            </ol>
+                        </nav>	
+                    </div>
+                </div>
+            </div>
+            <!-- End Breadscrumb -->
+
+            <!-- Start Content -->
+            <div class="content p-0">
+                <section class="section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section-header section-header-five text-center">
+                                    <h2>Savor Every Moment </h2>
+                                    <p>Our dedication ensures a dining experience filled with exquisite flavors and unparalleled service.</p>
+                                </div>
+                                <!-- Video section start -->
+                                <div class="video-section video-section-five section">
+                                    <div class="video-btn wow rotateIn mb-0" data-wow-duration="1.5">
+                                        <a href="https://youtu.be/xPPLbEFbCAo?si=vWQ5vOsc5t3pj-I8" class="video-btn" data-fancybox="">
+                                            <div class="video-icon">
+                                                <i class="fas fa-play"></i>
+                                            </div>
+                                        </a>
+                                        <span class="wave wave1"></span>
+                                        <span class="wave wave2"></span>
+                                        <span class="wave wave3"></span>
+                                    </div>
+                                </div>
+                                <!-- Video section end -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section reservation-section">
+                     <section class="slide-section">
+                        <div class="horizontal-slide d-flex" data-direction="left" data-animated="true" data-speed="slow">
+                            <div class="slide-list d-flex">
+                                <div class="slide-item">
+                                    <h3 class="slide-title">Deals & Combos</h3>
+                                </div>
+                                <div class="slide-item">
+                                    <h3 class="slide-title">Deals & Combos</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="reservation-div">
+                                <div class="book-table">
+                                    <h3>Book a Table</h3>
+                                    <p>Reserve your table in advance & enjoy a seamless dining experience with us.</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <select class="select" aria-label="Number of persons">
+                                                <option value="">No of Person</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <select class="select" aria-label="Number of adults">
+                                                <option value="">Adults</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <div class="position-relative">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    aria-label="Select date"
+                                                    placeholder="Select Date"
+                                                    data-provider="flatpickr"
+                                                    data-date-format="Y-m-d"
+                                                >
+                                                <span class="input-icon">
+                                                    <i class="icon-calendar"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control" aria-label="Select time" placeholder="Select Time" data-provider="timepickr" data-time-hrs="true" data-default-time="12:00">
+                                                <span class="input-icon">
+                                                    <i class="icon-clock"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <textarea class="form-control" placeholder="Information if Any"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <a href="#" class="btn-lg btn-primary w-100">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section faq-section">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="faq-img">
+                                    <img src="assets/img/faq/faq-01.jpg" alt="faq" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="faq-header">
+                                    <h3>Got Questions? We’ve Got Answers!</h3>
+                                    <p>Find quick solutions to the most common queries about ordering food.</p>
+                                </div>
+                                <div class="card card-item mb-0">
+                                    <div class="card-body faq-content">
+                                        <div class="accordion" id="faqAccordion">
+
+                                            <!-- Item 1 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                                        01. How can I book a table online?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        You can book a table online through our website by selecting your preferred date and time.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Item 2 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                                        02. Is it necessary to book a table in advance?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        It is recommended to book in advance, especially during weekends and peak hours.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Item 3 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                                        03. Can I modify or cancel my reservation?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Yes, you can modify or cancel your reservation through your account or confirmation email.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Item 4 (Open by default) -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                                        04. Do you accommodate large groups or private events?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Absolutely! We welcome large group bookings and special occasions like birthdays, anniversaries, and corporate gatherings.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Item 5 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                                        05. Will I receive a booking confirmation?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Yes, you will receive a confirmation email after completing your booking.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Item 6 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingSix">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                                                        06. Do you have a minimum spend or deposit requirement?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body">
+                                                        Some bookings may require a deposit or minimum spend depending on the group size and event type.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- End Content -->
+
+        </div>
+        <!-- ========================
+			End Page Content
+		========================= -->
+
+        <!-- Start Footer -->
+		<footer class="footer">
+			<img src="assets/img/bg/footer-img.png" alt="Footer Background" class="footer-bg">
+			
+			<div class="footer-content">
+				<div class="container">
+					<div class="footer-top">
+						<div class="row g-4">
+							<div class="col-lg-4 col-md-12">
+								<div class="footer-about">
+									<a href="index.html">
+                                        <img src="assets/img/logo-white.svg" alt="DreamsFood Footer Logo" class="footer-logo img-fluid">
+                                    </a>
+                                    <p>From quick bites to gourmet meals, we make discovering, ordering, and enjoying food simple</p>
+                                    <div class="newsletter-form">
+                                        <input type="text" placeholder="yourmail@example.com" class="newsletter-input">
+                                        <button type="submit" class="primary-btn">Subscribe</button>
+                                    </div>
+								</div>
+							</div>
+							<div class="col-lg-8 col-md-12">
+								<div class="row g-4">
+									<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+										<div class="footer-widget">
+											<h3 class="footer-title">Pages</h3>
+											<div class="footer-links">
+												<ul>
+													<li>
+														<a href="index.html">
+															<i class="icon-arrow-up-right"></i>Home
+														</a>
+													</li>
+													<li>
+														<a href="menu-list.html">
+															<i class="icon-arrow-up-right"></i>Menu
+														</a>
+													</li>
+													<li>
+														<a href="product.html">
+															<i class="icon-arrow-up-right"></i>Shop
+														</a>
+													</li>
+													<li>
+														<a href="blog-grid.html">
+															<i class="icon-arrow-up-right"></i>Blog
+														</a>
+													</li>
+													<li>
+														<a href="contact-us.html">
+															<i class="icon-arrow-up-right"></i>Contact
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+										<div class="footer-widget">
+											<h3 class="footer-title">Useful Links</h3>
+											<div class="footer-links">
+												<ul>
+													<li>
+														<a href="cart.html">
+															<i class="icon-arrow-up-right"></i>Cart
+														</a>
+													</li>
+													<li>
+														<a href="checkout.html">
+															<i class="icon-arrow-up-right"></i>Checkout
+														</a>
+													</li>
+													<li>
+														<a href="user-profile.html">
+															<i class="icon-arrow-up-right"></i>My Account
+														</a>
+													</li>
+													<li>
+														<a href="terms-condition.html">
+															<i class="icon-arrow-up-right"></i>Terms & Conditions
+														</a>
+													</li>
+													<li>
+														<a href="privacy-policy.html">
+															<i class="icon-arrow-up-right"></i>Privacy Policy
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-5 col-md-4 col-12">
+										<div class="footer-widget">
+											<h3 class="footer-title">Working Hours</h3>											
+                                            <div class="working-hours">
+                                                <p>MON - FRI <span>8:00 AM - 6:00 PM</span></p>
+                                                <p class="mb-0">SAT - SUN <span>8:00 AM – 9:00 AM</span></p>
+                                            </div>
+											<h3 class="footer-title">Follow Us</h3>	
+                                            <div class="social-icon">
+                                                <a href="#" aria-label="fb"><i class="icon-facebook"></i></a>
+                                                <a href="#" aria-label="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                                                <a href="#" aria-label="linkedin"><i class="icon-linkedin"></i></a>
+                                                <a href="#" aria-label="youtube"><i class="icon-youtube"></i></a>
+                                            </div>		
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+				<div class="footer-contact">
+                    <div class="container">
+                        <div class="row align-items-center g-4">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="contact-title">
+                                    <h4>Get In Touch With Us</h4>
+                                    <p>We're here to help you</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="icon-headset"></i>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <p>Customer Support</p>
+                                        <h5><a href="tel:+11233444503">+1 12334 44503</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="icon-mail"></i>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <p>Email Address</p>
+                                        <h5><a href="mailto:info@example.com">info@example.com</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="icon-map-pin"></i>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <p>Location</p>
+                                        <h5>1234 Maple Street, TX 75201, USA</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="footer-bottom">
+					<p class="copyright">Copyright &copy; 2026 <a href="index.html">DreamsFood</a>. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+	</div>
+	<!-- End Wrapper -->
+
+
+    <!-- Wow JS -->
+	<script src="assets/plugins/wow/js/wow.min.js"></script>
+
+    <!-- Flatpickr JS -->
+    <script src="assets/plugins/flatpickr/flatpickr.min.js"></script>
+    
+    <!-- Choices JS -->
+    <script src="assets/plugins/choices/choices.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/script.min.js" defer></script>
+</body>
+
+
+</html>
